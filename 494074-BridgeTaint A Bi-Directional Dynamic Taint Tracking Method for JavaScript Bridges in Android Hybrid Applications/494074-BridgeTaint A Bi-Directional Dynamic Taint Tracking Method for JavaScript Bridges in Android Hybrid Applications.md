@@ -13,10 +13,12 @@
 1、本文提出了一种新的方法来追踪混合应用程序的跨语言数据流和污染数据。与现有的静态代码分析方法不同，本方法动态记录通过网桥接口传输的敏感数据的污点信息，然后根据记录的JavaScript和Java数据之间的映射恢复相应数据的污点标签。
 
 ![](https://raw.githubusercontent.com/ojool/Homework/master/img-folder/1.png)
+
 图1 BRIDGETAINT框架图
 
 2、基于BRIDGETAINT，本文设计并实现了一个用于Android混合应用程序的跨桥数据跟踪和安全检测系统BRIDGEINSPECTOR。在BRIDGEBENCH和1172个Android market应用程序上的实验结果表明，BRIDGEINSPECTOR能够有效地跟踪bridge通信的数据流，同时还可以检测到其他针对混合应用程序的攻击。
 ![](https://raw.githubusercontent.com/ojool/Homework/master/img-folder/2.png)
+
 图2  BRIDGEINSPECTOR框架图
 
 3、本文使用Cordova为Android混合应用程序开发了一个网桥安全测试基准BRIDGEBENCH。BRIDGEBENCH包括38个测试应用，其中32个应用存在跨语言隐私泄露的风险，其他6个应用程序易受跨语言代码注入攻击，可以作为桥梁安全检测系统性能测试的基准。第一组样品1-32通过网络发送用户隐私， 第二组样品33-38利用代码执行API直接处理插件获取的本机数据。 一旦这些数据包含恶意代码，就会导致交叉Uage代码注入攻击。 测试结果显示BRIDGEINSPECTOR成功检测到所有路径中跨语言隐私泄露和代码注入漏洞的所有不安全数据流。
