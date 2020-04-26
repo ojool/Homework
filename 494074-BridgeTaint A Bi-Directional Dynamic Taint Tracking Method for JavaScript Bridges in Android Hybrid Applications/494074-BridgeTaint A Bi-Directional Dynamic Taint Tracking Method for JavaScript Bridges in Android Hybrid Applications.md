@@ -2,6 +2,7 @@
  -   原文作者：Junyang Bai, Weiping Wang, Yan Qin, Shigeng Zhang, Jianxin Wang, and Yi Pan
 -   原文来源：IEEE Transactions on Information Forensics and Security, vol. 14, no. 3, pp. 677-692, March 2019
 -   原文链接：https://ieeexplore.ieee.org/document/8410576
+
 混合应用程序由于其跨平台功能和高性能而变得越来越流行。 这些应用程序使用Java脚本桥接通信方案进行交互在本机代码和Web代码之间建立连接。虽然通过启用跨语言调用极大地扩展了混合应用程序的功能，但桥接通信方案也可能导致一些新的安全问题，例如跨语言代码注入攻击和隐私泄漏。 本文提出了一种双向动态污点跟踪方法，用于检测混合应用程序中的桥接安全问题。 
 
 ### 1、论文简要
